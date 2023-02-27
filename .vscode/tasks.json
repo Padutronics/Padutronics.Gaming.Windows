@@ -52,6 +52,15 @@
                 "Patch"
             ],
             "problemMatcher": []
+        },
+        {
+            "label": "publish",
+            "type": "shell",
+            "command": "PublishNuGetPackage.ps1",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
         }
     ]
 }
