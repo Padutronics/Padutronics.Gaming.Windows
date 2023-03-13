@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 
 namespace Padutronics.Gaming.Windows.Graphics;
 
-public sealed class RenderView : IRenderView
+public sealed class RenderView : IRenderView, IRenderViewInitializer
 {
     private const WS WindowStyle = WS.WS_OVERLAPPEDWINDOW;
 
@@ -135,6 +135,12 @@ public sealed class RenderView : IRenderView
 
             Size = new Size(width, height);
         }
+    }
+
+    public void InitializeRenderView()
+    {
+        // Trigger lazy creation of render view window.
+        _ = windowHandle.Value;
     }
 
     private void OnSizeChanged(SizeEventArgs e)
