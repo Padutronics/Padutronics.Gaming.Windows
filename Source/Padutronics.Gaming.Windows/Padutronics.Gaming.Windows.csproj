@@ -17,6 +17,7 @@
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Padutronics.Conversion.Converters" Version="0.1.0" />
+        <PackageReference Include="Padutronics.Extensions.System" Version="0.4.0" />
         <PackageReference Include="Padutronics.Gaming" Version="0.1.0" />
         <PackageReference Include="Padutronics.Geometry" Version="0.14.0" />
         <PackageReference Include="Padutronics.Windows.Win32.Api" Version="0.4.0" />
